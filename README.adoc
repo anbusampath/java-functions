@@ -36,6 +36,10 @@ The `mongodb-supplier` conditionally provides an `Supplier<Flux<Message<?>>>` be
 The function bean is named `mongodbSupplier` in either case.
 The `MongodbSupplierProperties` exposes configuration properties for this Supplier bean.
 
+`mongodb-consumer`
+The `mongodb-consumer provides a Consumer<Flux<Message<?>> bean to write payload data to a statically configured Mongo DB collection, or a collection name given by evaluating a SpEL expression,
+e.g., `headers['collection-name']`.
+
 `rabbit-consumer`
 
 TODO: provide a description
